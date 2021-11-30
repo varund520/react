@@ -9,6 +9,7 @@ function ExpenseItem(props){
                 <div className="expense-item__price">${ props.price }</div>
 
                 <div>this is the test</div>
+                <div>this is branch test</div>
 
             </div>
         </div>
