@@ -1,21 +1,20 @@
-import ExpenseItem from "./components/SubComponent/ExpenseItem";
-
+import Expenses from "./components/SubComponent/Expenses";
 function App(){
-    let data = [
+    let Expensesdata = [
         {   
-            date  : "29-Nov-2021",
+            date  : "08/11/1997",
             title : "rent",
             price : "100"
         },
 
         {   
-            date  : "29-Nov-2021",
+            date  : "09/11/1997",
             title : "School fee",
             price : "200"
         },
 
         {   
-            date  : "29-Nov-2021",
+            date  : "10/11/1997",
             title : "Food",
             price : "150"
         }
@@ -24,27 +23,9 @@ function App(){
     return (
             <div>
                 <h2>Let's Get Started</h2>
-                <ExpenseItem
-                date  = { data[0].date  }
-                title = { data[0].title }
-                price = { data[0].price }
-                >
-                </ExpenseItem>
-
-                <ExpenseItem
-                date  = { data[1].date  }
-                title = { data[1].title }
-                price = { data[1].price }
-                >
-                </ExpenseItem>
-
-                <ExpenseItem
-                date  = { data[2].date  }
-                title = { data[2].title }
-                price = { data[2].price }
-                >
-                </ExpenseItem>
-
+                    <Expenses
+                      item={Expensesdata}
+                    ></Expenses>
             </div>
     );
 }
